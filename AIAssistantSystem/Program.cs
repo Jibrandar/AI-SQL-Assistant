@@ -5,7 +5,7 @@ internal class Program
     private static async Task Main(string[] args)
     {
        
-        SQLAssistant sqlAssistant = new SQLAssistant();
+        SQLAssistant sqlAssistant = new SQLAssistant(); // object initialisation
 
         Console.WriteLine("==========================================================================================");
         Console.WriteLine("AI SQL ASSISTANT");
