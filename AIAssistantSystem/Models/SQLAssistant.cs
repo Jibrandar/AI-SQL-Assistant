@@ -32,7 +32,7 @@ namespace AIAssistantSystem.Models
         {
             string systemPrompt = "You are an SQL expert.You will get an select query in english. convert the english sentence into a sql select query and explain the query to the user. If any other query given dont generate anything and return with proper response";
             var response = await client.GetResponseAsync([
-                new(ChatRole.System,systemPrompt),
+                new  (ChatRole.System,systemPrompt),
                new(ChatRole.User,requirement)
                 ]);
             return response.Text;
